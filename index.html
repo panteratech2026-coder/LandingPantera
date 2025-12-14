@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Landing Tailwind</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-black text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center space-x-3">
+                <img src="img/icono.png" class="w-10 h-10 rounded-full" alt="Logo">
+
+                <h1 class="text-2xl font-bold">MiLanding</h1>
+            </div>
+
+            <ul class="hidden md:flex space-x-6 text-lg">
+                <li><a href="#inicio" class="hover:text-purple-400">Inicio</a></li>
+                <li><a href="#servicios" class="hover:text-purple-400">Servicios</a></li>
+                <li><a href="#contacto" class="hover:text-purple-400">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="relative h-[70vh] flex items-center justify-center text-center text-white bg-black">
+        <!-- <img src="img/hero.jpg" 
+             class="absolute inset-0 w-full h-full object-cover brightness-50" /> -->
+
+        <div class="relative z-10 px-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Tu solución digital comienza aquí</h2>
+            <p class="text-lg md:text-xl mb-6">Creamos páginas modernas y rápidas para tu negocio.</p>
+            <a href="#contacto" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg text-lg font-semibold">
+                Quiero más info
+            </a>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-10">Servicios</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="bg-gray-100 p-6 rounded-2xl shadow">
+                    <h3 class="text-xl font-semibold mb-2">Diseño Web</h3>
+                    <p>Landing pages y sitios optimizados para ventas.</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-2xl shadow">
+                    <h3 class="text-xl font-semibold mb-2">Soporte Técnico</h3>
+                    <p>Formateos, instalación, limpieza y más.</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-2xl shadow">
+                    <h3 class="text-xl font-semibold mb-2">Optimización UX/SEO</h3>
+                    <p>Mejora de velocidad, SEO básico y rendimiento.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-10">Contacto</h2>
+
+            <form action="https://formsubmit.co/amayabenja34@gmail.com" method="POST"class="max-w-xl mx-auto space-y-4" >
+                <input type="text" name="nombre" placeholder="Tu nombre" class="w-full p-3 border rounded-lg" required>
+                <input type="email" name="email" placeholder="Tu email" class="w-full p-3 border rounded-lg" required>
+                <textarea name="mensaje" placeholder="Tu mensaje" class="w-full p-3 border rounded-lg h-32" required></textarea>
+
+                <!-- Opciones de seguridad -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <button class="bg-purple-600 hover:bg-purple-700 text-white w-full py-3 rounded-lg font-semibold">
+                    Enviar
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white text-center py-4">
+        © 2025 - MiLanding. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
